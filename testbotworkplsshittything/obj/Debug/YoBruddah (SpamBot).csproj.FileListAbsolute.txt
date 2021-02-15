@@ -1,0 +1,10 @@
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\bin\Debug\YoBruddah (SpamBot).exe.config
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\bin\Debug\YoBruddah (SpamBot).exe
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\bin\Debug\YoBruddah (SpamBot).pdb
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\testbotworkplsshittything.Form1.resources
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\testbotworkplsshittything.Properties.Resources.resources
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\YoBruddah (SpamBot).csproj.GenerateResource.cache
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\YoBruddah (SpamBot).csproj.CoreCompileInputs.cache
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\YoBruddah (SpamBot).exe
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\YoBruddah (SpamBot).pdb
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\YoBruddah (SpamBot).csprojAssemblyReference.cache

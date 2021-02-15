@@ -1,0 +1,9 @@
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\bin\Debug\testbotworkplsshittything.exe.config
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\bin\Debug\testbotworkplsshittything.exe
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\bin\Debug\testbotworkplsshittything.pdb
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\testbotworkplsshittything.Form1.resources
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\testbotworkplsshittything.Properties.Resources.resources
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\testbotworkplsshittything.csproj.GenerateResource.cache
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\testbotworkplsshittything.csproj.CoreCompileInputs.cache
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\testbotworkplsshittything.exe
+C:\Users\maelc\source\repos\testbotworkplsshittything\testbotworkplsshittything\obj\Debug\testbotworkplsshittything.pdb
