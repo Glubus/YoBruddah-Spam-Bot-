@@ -33,6 +33,8 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TextBox2 = new System.Windows.Forms.TextBox();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -69,12 +71,36 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.TextBox2);
             this.panel1.Controls.Add(this.checkBox1);
             this.panel1.Location = new System.Drawing.Point(22, 206);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(256, 115);
             this.panel1.TabIndex = 2;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(61, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 18);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Select the interval (in ms)";
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
+            // 
+            // TextBox2
+            // 
+            this.TextBox2.Location = new System.Drawing.Point(15, 40);
+            this.TextBox2.Multiline = true;
+            this.TextBox2.Name = "TextBox2";
+            this.TextBox2.Size = new System.Drawing.Size(40, 23);
+            this.TextBox2.TabIndex = 1;
+            this.TextBox2.Text = "500";
+            this.TextBox2.TextChanged += new System.EventHandler(this.TextBox2_TextChanged);
             // 
             // Form1
             // 
@@ -106,6 +132,8 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panel1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox TextBox2;
     }
 }
 

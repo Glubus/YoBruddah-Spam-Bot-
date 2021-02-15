@@ -59,7 +59,8 @@ namespace testbotworkplsshittything
                         try
                         {
                             SendKeys.SendWait(textBox1.Text + "{ENTER}");
-                            Thread.Sleep(250);
+                            Thread.Sleep(Int32.Parse(TextBox2.Text));
+
                         }
                         catch
                         {
@@ -81,6 +82,18 @@ namespace testbotworkplsshittything
 
         }
 
+        private void Label1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(TextBox2.Text, "[^0-2500]"))
+            {
+                TextBox2.Text.Remove(TextBox2.Text.Length - 1);
+            }
+        }
     }
 }
+
