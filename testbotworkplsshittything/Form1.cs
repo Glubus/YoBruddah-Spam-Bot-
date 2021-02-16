@@ -17,10 +17,27 @@ namespace testbotworkplsshittything
     {
         [DllImport("user32.dll")]
         static extern short GetAsyncKeyState(Keys vKey);
+        public int parsedValue;
+        public int intervals = 50;
+        public bool Click = false;
+
+        private void AutoClick()
+        {
+            while (true)
+            {
+                if (Click == true)
+                {
+                    SendKeys.SendWait(textBox1.Text + "{ENTER}");
+                    Thread.Sleep(intervals);
+                }
+                Thread.Sleep(2);
+            }
+        }
 
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -43,6 +60,9 @@ namespace testbotworkplsshittything
         private void Form1_Load(object sender, EventArgs e)
         {
             backgroundWorker1.RunWorkerAsync();
+            Thread AC = new Thread(AutoClick);
+            CheckForIllegalCrossThreadCalls = false; 
+            AC.Start();
         }
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -54,17 +74,32 @@ namespace testbotworkplsshittything
             {
                 if (checkBox1.Checked)
                 {
-                    if (GetAsyncKeyState(Keys.Delete) < 0)
+                  if (checkBox2.Checked)
+                        {
+                        if (GetAsyncKeyState(Keys.Insert) < 0)
+                        {
+                            Click = false;
+                        }
+                        else if (GetAsyncKeyState(Keys.Delete) < 0)
+                        {
+                            Click = true;
+                        }
+                        
+                    }
+                   else if 
+                       (GetAsyncKeyState(Keys.Delete) < 0)
                     {
                         try
                         {
                             SendKeys.SendWait(textBox1.Text + "{ENTER}");
-                            Thread.Sleep(250);
+                            Thread.Sleep(intervals);
+
                         }
                         catch
                         {
                         }
                     }
+                    Thread.Sleep(10);
                 }
                 Thread.Sleep(10);
 
@@ -81,6 +116,33 @@ namespace testbotworkplsshittything
 
         }
 
+        private void Label1_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(TextBox2.Text, out parsedValue))
+            {
+                MessageBox.Show("Fuckyou!");
+                return;
+            }
+            else
+            {
+                intervals = int.Parse(TextBox2.Text);
+            }
+        }
+
+        private void CheckBox2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
